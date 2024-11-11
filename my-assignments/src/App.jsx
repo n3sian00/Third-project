@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MainUI from './components/MainUI';
-import AnotherComponent from './components/AnotherComponent';
+import ComponentUI from './components/ComponentUI';
+import OrderInfo from './components/OrderInfo';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MainUI />} />
-        <Route path="/another" element={<AnotherComponent />} />
+        <Route path="/" element={<ComponentUI />} />
+        <Route path="/order-info" element={<OrderInfo />} />
       </Routes>
     </Router>
   );
